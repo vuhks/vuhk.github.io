@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vuhks.github.io/"/>
-  <updated>2020-06-07T16:07:55.353Z</updated>
+  <updated>2020-06-07T16:23:56.187Z</updated>
   <id>https://vuhks.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>思维导图测试</title>
+    <link href="https://vuhks.github.io/blogs/ckb57rpu1000cf46afail9kmz.html"/>
+    <id>https://vuhks.github.io/blogs/ckb57rpu1000cf46afail9kmz.html</id>
+    <published>2020-06-07T16:23:14.000Z</published>
+    <updated>2020-06-07T16:23:56.187Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul><li><a href="https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html" target="_blank" rel="noopener">Hexo 的思维导图插件</a><ul><li>前言</li><li>使用方法<ul><li>一</li><li>二</li><li>三</li></ul></li><li>太长不看</li><li>参考资料</li></ul></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      这是Hexo的思维导图测试
+    
+    </summary>
+    
+    
+      <category term="blogs" scheme="https://vuhks.github.io/categories/blogs/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>hexo deploy时免输密码</title>
-    <link href="https://vuhks.github.io/[object%20Object]/hexo-deploy%E6%97%B6%E5%85%8D%E8%BE%93%E5%AF%86%E7%A0%81/"/>
-    <id>https://vuhks.github.io/[object%20Object]/hexo-deploy%E6%97%B6%E5%85%8D%E8%BE%93%E5%AF%86%E7%A0%81/</id>
+    <link href="https://vuhks.github.io/blogs/ckb59gb5x0000i06a0izuas5d.html"/>
+    <id>https://vuhks.github.io/blogs/ckb59gb5x0000i06a0izuas5d.html</id>
     <published>2020-06-07T16:05:30.000Z</published>
-    <updated>2020-06-07T16:07:55.353Z</updated>
+    <updated>2020-06-07T16:31:43.120Z</updated>
     
     <content type="html"><![CDATA[<p>来自csdn(<a href="https://blog.csdn.net/hhgggggg/article/details/77853665" target="_blank" rel="noopener">https://blog.csdn.net/hhgggggg/article/details/77853665</a>)</p>]]></content>
     
@@ -38,16 +59,18 @@
       <category term="blogs" scheme="https://vuhks.github.io/categories/blogs/"/>
     
     
-      <category term="-Hexo -blogs" scheme="https://vuhks.github.io/tags/Hexo-blogs/"/>
+      <category term="blogs" scheme="https://vuhks.github.io/tags/blogs/"/>
+    
+      <category term="Hexo" scheme="https://vuhks.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>文章加密测试</title>
-    <link href="https://vuhks.github.io/[object%20Object]/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/"/>
-    <id>https://vuhks.github.io/[object%20Object]/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</id>
+    <link href="https://vuhks.github.io/%E6%95%99%E7%A8%8B/ckb58nkkc0001g46acuqr4kdj.html"/>
+    <id>https://vuhks.github.io/%E6%95%99%E7%A8%8B/ckb58nkkc0001g46acuqr4kdj.html</id>
     <published>2020-06-07T15:45:10.000Z</published>
-    <updated>2020-06-07T15:49:44.785Z</updated>
+    <updated>2020-06-07T16:24:16.090Z</updated>
     
     <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">输入密码，查看文章</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="aace06ea0681c6ab4e4aec42365c7bede6b1cbb32fe21376bf87db13896b02c0">7aadc65693617abc6b9db6fcde071c3d5726a8f5b7b01e35e3021c8e3ddeb8c63d751a5d7a01048537f3ef6f7dfb55a8d5c22703265dcc44c3283ed25d56b91e8c16a300d64ee8779b615330b8699f709ac000337452e363c112d2ea5801f6891cd4408a87d2a805dc0da3ef39807abf801ce465547977ccd507d37e801b96fcf19805292943272e9d84cc7728c339baf533fc31cbbb8b5840846f17aa6227ba9bc4ea23405fae9aae9cf53873c762ce94a198742f0f65b65b907aade3cf6ee6</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
@@ -69,10 +92,10 @@
   
   <entry>
     <title>专家没有灵魂？知识要广还是要精？</title>
-    <link href="https://vuhks.github.io/[object%20Object]/%E4%B8%93%E5%AE%B6%E6%B2%A1%E6%9C%89%E7%81%B5%E9%AD%82%EF%BC%9F%E7%9F%A5%E8%AF%86%E8%A6%81%E5%B9%BF%E8%BF%98%E6%98%AF%E8%A6%81%E7%B2%BE%EF%BC%9F/"/>
-    <id>https://vuhks.github.io/[object%20Object]/%E4%B8%93%E5%AE%B6%E6%B2%A1%E6%9C%89%E7%81%B5%E9%AD%82%EF%BC%9F%E7%9F%A5%E8%AF%86%E8%A6%81%E5%B9%BF%E8%BF%98%E6%98%AF%E8%A6%81%E7%B2%BE%EF%BC%9F/</id>
+    <link href="https://vuhks.github.io/%E7%BD%97%E7%BF%94%E8%AF%B4%E5%88%91%E6%B3%95/ckb57rptx0009f46a9l3yggfu.html"/>
+    <id>https://vuhks.github.io/%E7%BD%97%E7%BF%94%E8%AF%B4%E5%88%91%E6%B3%95/ckb57rptx0009f46a9l3yggfu.html</id>
     <published>2020-06-06T17:17:00.000Z</published>
-    <updated>2020-06-07T14:03:22.918Z</updated>
+    <updated>2020-06-07T16:22:33.852Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://www.bilibili.com/video/BV1YV411r7xs" target="_blank" rel="noopener">来自bilibili罗翔说刑法</a><br>在“知识要广还是要精”这个辩题中，个人认为，我们要以广袤的视野来对冲专业化教育的不足，需要用广袤的视野来避免专业的独断性。在专业化教育不断盛行的今天，我们可能要更强调广博的通识化视野，不要忘记知识最终的目的是要追求真理。<br>知识要广还是要精，其实，你会发现无论是追求广还是追求精都是不可能的。首先，我们是无法追逐真正广博的知识，庄子说，“吾生也有涯，而知也无涯，以有涯逐无涯，殆矣”。那其次，我们其实也无法追逐真正专精的知识，因为任何一个专精的知识还可以再细分的，越是研究你越是觉得知识的深不可测。春秋名家的代表人物惠师就曾经说过一个著名的悖论，“一尺之锤日取其半，万世不竭”。所以任何专业的知识其实都可以细分再细分，那都是日取其半，一半一半又一半，万世不竭。所以也许我们这一生都会处于这种悖论性的存在，我们想获得广博的知识，但是我们知道知识其实是没有边界的，我们都希望能够拥有专精的知识，但是我们每一个专业的知识的细分都是没有穷尽的。像我搞刑法的，大学我学的是法律，后来开始搞刑法，后来慢慢的研究范围变成了性犯罪，后来又变成了性犯罪的同意年龄（研究范围）。本科法律毕业，我觉得我什么法律都懂，什么案子都敢做，读到博士发现自己只懂刑法了，到了现在我觉得我刑法好像也不太懂。<br>但是，在我们今天这样一个专业化的时代，很多专业人士都有一种知识上的优越感和傲慢感，所以也许在今天，我们需要用广博的视野去对冲我们这个时代专业教育的不足。注意是对冲而不是对抗，在某种意义上专与博并不冲突，苏轼说，“博观而约取，厚积而薄发”，没有博观，不可能有专业上的厚积薄发。当然，所有的厚积薄发又让我们进一步在广袤的知识上有所追求，从而形成一种正向的循环。那我刚才说过，在我们今天这样一种专业化的背景下，我们必须要以广袤的视野来对冲专业化教育的不足。<br>首先，这种广博的视野可以让我们走出专业化思维的独断性，人是生活在这个世界的一部分，所以人不可能获得对这个世界的整体化的认识。这就像盲人摸象一样，也许我们每一个专业，我们所获得的都是大象的某一个片面。这就是苏格拉底智慧给我们的提醒。苏格拉底告诉我们，“承认自己的无知乃是开启智慧的大门”，苏格拉底当时就在雅典专门攻击各种专业人士的不足，让这些专业人士承认自己的无知，所以这种广博化的视野，就可以让我们对专业保持适度的怀疑。这其实也可以促进专业的发展，可以帮助我们这些专业人士，走出知识的优越感和独断。<br>其次，这种广博的视野，可以让我们走出专业化思维的过分技术性。大家如果把人类的知识比作一棵知识树，你会发现这棵知识树有许许多多的枝杈，每个枝杈又有分枝，但它本源上都是有一棵知识树，所以这个知树数是有一个根本的。换言之，每一个学科不过是知识树的一个分叉，它本身都应该有着共同的共向的追求。但是现在有越来越多的学科，一生二，二生三，三生万物，千万种学科，越来越自立门户，而忘记了自己原本追求的共向性的追求。那这种专业化的思维非常容易导致技术主义的思维逻辑，不再关注共向，不再关注真理，它会导致真理的相对性。这就是马克思韦伯为什么会说，“专家没有灵魂，纵欲者没有心肝”。当然了，马克思韦伯本身所强调的价值中立的研究，可能也是导致这一恶果的重要原因。我经常在想这种价值中立难道不也是一种价值观吗？这种价值中立不也是一种偏见吗？我们在研究过程中真的能够保证价值中立吗？克隆技术、基因技术、物理、化学、法律，难道真的只是一种纯粹的技术吗？他难道不需要接受普遍道德的约束吗？相信大家都知道，德国的法学是非常的精致，而在纳粹时期，那些精致的法学家为纳粹的集权提供技术主义的精致的论证。1942年，纳粹的高级官员在柏林开了一个会议，叫万湖会议，在这个会议中，纳粹出台了针对犹太人的最终解决方案，与会者制定了一个详细的各国屠杀犹太人的分配名单，德国人以其特有的理性和严谨精心策划分配指标杀人，甚至精确到个位，会议持续了90分钟，最终导致600万犹太人的生命终结，与会的15个人有8个人拥有博士学位，而且大部分是法学博士。所以甘地提醒我们，能够毁灭人类的有7种东西，其中一种就是没有良知的技术。因此这种广博的视野可以让我们对任何专业知识的非道德性保持警惕，任何专业知识都要回到它的本源，都应该有对普遍共向和普遍道德的追求。<br>第三，广博的视野可以让我们避免专业思维的易腐性，真正保持专业的独立性。德国法学家考夫曼就曾经批评过技术主义法学，他说纯粹的技术性法学不过是一个妓女，人尽可夫，可以为任何人服务。权力导致腐败，绝对权力往往导致绝对腐败。学术权力也不例外，作为专业人士，你如何能够避免财富、权力、欲望的诱惑？你如何能够保证自己所发表的专业意见，就是独立性的专业意见呢？当然，需要外在的制度约束，但是我们更需要内心的某种笃定。如果我们把专业知识放在人类整体的知识长河中，我们会认识到我们所有的专业知识不过是广袤知识海洋中的一个很小很小的方面，所有的专业知识，它都是为了追求普遍性的真理。只有这样一种广袤的视野，我们才能获得这样一种内心的确信，我们所拥有的一切专业知识，无论多么专精，最终都如滴水汇入真理的洋海，万象归一。我们要追寻普遍的真理，只有这样我们才能在真理面前保持足够的敬畏，避免自己被人生路上的各种诱惑所带偏所腐蚀，保持专业意见的独立性。只有这种广袤的视野才能避免专业的独断性，只有这种广袤的视野才能避免专业的技术主义倾向，同时也只有这样一种广袤的视野才能尽可能的保证我们专业意见的独立性。<br>但是我必须要提醒各位同学，我们今天看似一个辩论，但辩论的目的不是为了辩论而辩论，否则就会导致诡辩，导致技巧超过对真理的追求，以致最后认为没有真理，一切真理都是相对的，我们当然需要保持适度的怀疑，但是我们不能走向绝对的怀疑，如果你持绝对的怀疑，你是不是要跳下去来证明你是否是存在的呢？绝对的怀疑一定会导致虚无。古希腊有一个著名的诡辩家，普罗泰戈拉，他曾经提过人是万物的尺度。这本来没什么问题，张扬人道主义，但是他所谓的人是万物的尺度开始变成了自己是万物的尺度。每一个人都是专业的尺度，那就一定会导致真理的相对化。所以普罗泰戈拉专门教授如何来打官司，他说我可以保证你赢，因为我有技巧。所以他跟一个一个学生签订的合同，先交一半的培训费，等你到法庭打官司，胜诉了以后，你再交一半的钱。最后这个学生只交了他一半钱，剩下那一半钱不肯交了。普罗泰戈拉很聪明，于是他到法院起诉那个学生，他想的很好，如果我胜诉这个钱我能拿来，如果我败诉那就证明那个学生胜诉了，那么他依然还是要给我钱。这个学生也很聪明，学生的想法是如果我胜诉，那我钱就可以不给了，如果我败诉那就证明你教的没用，因为我败诉了。请大家注意，这就是辩论所导致的诡辩，而我们的辩论并不是单纯的切磋技术，我们的辩论依然是追求真理。因此我们永远不要在自己看重的立场上附着不加边界的价值，我们永远要接受对立观点的相对合理性，在某种意义上，专与博并不冲突，但是在专业化教育不断盛行的今天，越来越多的专业化教育培养的都只是技术工人，而忘记了知识最终的目的，依然是追求真理。所以在这样一种背景下，我们可能更要强调广博的通识化的这样一种视野，为此我们才能知道，追求知识的真正目的在于寻找智慧，在于追求真理。</p>]]></content>
     
@@ -95,34 +118,11 @@
   </entry>
   
   <entry>
-    <title>思维导图测试</title>
-    <link href="https://vuhks.github.io/[object%20Object]/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E6%B5%8B%E8%AF%95/"/>
-    <id>https://vuhks.github.io/[object%20Object]/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E6%B5%8B%E8%AF%95/</id>
-    <published>2020-06-06T17:09:10.185Z</published>
-    <updated>2020-06-06T17:21:30.970Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul><li><a href="https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html" target="_blank" rel="noopener">Hexo 的思维导图插件</a><ul><li>前言</li><li>使用方法<ul><li>一</li><li>二</li><li>三</li></ul></li><li>太长不看</li><li>参考资料</li></ul></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote class=&quot;pullquote mindmap mindmap-md&quot;&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html&quot; target=&quot;_blank
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Next主题题配置文件详解</title>
-    <link href="https://vuhks.github.io/[object%20Object]/Next%E4%B8%BB%E9%A2%98%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://vuhks.github.io/[object%20Object]/Next%E4%B8%BB%E9%A2%98%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://vuhks.github.io/blogs/ckb57rpto0007f46a6a1x3h9k.html"/>
+    <id>https://vuhks.github.io/blogs/ckb57rpto0007f46a6a1x3h9k.html</id>
     <published>2020-05-29T15:11:02.000Z</published>
-    <updated>2020-06-07T14:03:10.447Z</updated>
+    <updated>2020-06-07T16:33:04.542Z</updated>
     
     <content type="html"><![CDATA[<p>位于<code>/theme/next/_config.yml</code>文件是配置next主题的开关<br>以下解释每部分代码控制的什么部分<br>详细配置含义可参见<a href="https://theme-next.js.org/docs/getting-started/" target="_blank" rel="noopener">Next主题入门</a></p><h1 id="主题核心配置"><a href="#主题核心配置" class="headerlink" title="主题核心配置"></a>主题核心配置</h1><p>Theme Core Configuration Settings</p><h2 id="override"><a href="#override" class="headerlink" title="override"></a>override</h2><p>false：则将<code>_data / next.yml</code>中的配置合并到默认配置中<br>true: 则会使用<code>_data / next.yml</code>中的选项完全覆盖默认配置（覆盖）。 仅适用于NexT设置。如果为true，则必须将默认NexT<code>_config.yml</code>中的所有配置复制到<code>next.yml</code>中</p><h2 id="reminder"><a href="#reminder" class="headerlink" title="reminder"></a>reminder</h2><p>控制台提示是否发布了新版本</p><h2 id="cache"><a href="#cache" class="headerlink" title="cache"></a>cache</h2><p>是否允许缓存内容生成</p><h2 id="minfy"><a href="#minfy" class="headerlink" title="minfy"></a>minfy</h2><p><code>hexo generate</code>后是否删除不必要的文件，默认是false</p><h2 id="custom-file-path"><a href="#custom-file-path" class="headerlink" title="custom_file_path"></a>custom_file_path</h2><p>自定义文件路径，如果启用，在站点目录<code>source / data</code>中创建自定义文件，并在下面取消注释所需的文件。  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">head: source&#x2F;_data&#x2F;head.swig</span><br><span class="line">header: source&#x2F;_data&#x2F;header.swig</span><br><span class="line">sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br><span class="line">postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br><span class="line">postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br><span class="line">footer: source&#x2F;_data&#x2F;footer.swig</span><br><span class="line">bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br><span class="line">variable: source&#x2F;_data&#x2F;variables.styl</span><br><span class="line">mixin: source&#x2F;_data&#x2F;mixins.styl</span><br><span class="line">style: source&#x2F;_data&#x2F;styles.styl</span><br></pre></td></tr></table></figure><h1 id="网站信息设置"><a href="#网站信息设置" class="headerlink" title="网站信息设置"></a>网站信息设置</h1><h2 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h2><p>网站图标</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">small: &#x2F;images&#x2F;favicon-16x16-next.png</span><br><span class="line">medium: &#x2F;images&#x2F;favicon-32x32-next.png</span><br><span class="line">apple_touch_icon: &#x2F;images&#x2F;apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: &#x2F;images&#x2F;logo.svg</span><br><span class="line">android_manifest: &#x2F;images&#x2F;manifest.json</span><br><span class="line">ms_browserconfig: &#x2F;images&#x2F;browserconfig.xml</span><br></pre></td></tr></table></figure><h2 id="language-switcher"><a href="#language-switcher" class="headerlink" title="language_switcher"></a>language_switcher</h2><p>页脚显示多语言开关按钮，默认不启用</p><h2 id="footer-页脚设置"><a href="#footer-页脚设置" class="headerlink" title="footer 页脚设置"></a>footer 页脚设置</h2><h3 id="since-2015"><a href="#since-2015" class="headerlink" title="since: 2015"></a>since: 2015</h3><p>指定网站设置的日期。 如果未定义，将使用当前年份。</p><h3 id="icon"><a href="#icon" class="headerlink" title="icon"></a>icon</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name: fa fa-heart #Font Awesome中的图标名称</span><br><span class="line">animatted: false #icon是否支持动画</span><br><span class="line">color:"ff0000" # 使用十六进制改变颜色</span><br></pre></td></tr></table></figure><h3 id="coyright"><a href="#coyright" class="headerlink" title="coyright"></a>coyright</h3><p>如果定义为flase，则从站点配置文件<code>_config.yml</code>中读取<code>author</code></p><h3 id="powered"><a href="#powered" class="headerlink" title="powered"></a>powered</h3><p>是否显示powered by Hexo &amp; false</p><h3 id="beian"><a href="#beian" class="headerlink" title="beian"></a>beian</h3><p>国内备案用户显示<br>creative_commons:备案信息</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">icp:             #The digit in the num of gongan beian.</span><br><span class="line">gongan_id        #The full num of gongan beian.</span><br><span class="line">gongan_num       # The full num of gongan beian.</span><br><span class="line">gongan_icon_url  # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download</span><br></pre></td></tr></table></figure><h3 id="creative-commons"><a href="#creative-commons" class="headerlink" title="creative_commons"></a>creative_commons</h3><p>Creative Commons 4.0国际许可</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">license: by-nc-sa #其他可用的证书 by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span><br><span class="line">sidebar: false</span><br><span class="line">post:    false</span><br><span class="line">language:          #如果您喜欢CC许可证的翻译版本，可以设置语言值 https://creativecommons.org</span><br></pre></td></tr></table></figure><h1 id="schemes"><a href="#schemes" class="headerlink" title="schemes"></a>schemes</h1><p>主题方案选择，从next主题自带的四种里选择一种</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scheme: Muse</span><br><span class="line">scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure><p>Muse Mist是单栏，Pisces和Gemin是双栏</p><h3 id="darkmode"><a href="#darkmode" class="headerlink" title="darkmode"></a>darkmode</h3><p>暗黑模式，根据浏览器自动切换为暗黑</p><h2 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h2>]]></content>
     
@@ -144,10 +144,10 @@
   
   <entry>
     <title>onedrive同步任意文件夹</title>
-    <link href="https://vuhks.github.io/[object%20Object]/onedrive%E5%90%8C%E6%AD%A5%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
-    <id>https://vuhks.github.io/[object%20Object]/onedrive%E5%90%8C%E6%AD%A5%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
+    <link href="https://vuhks.github.io/windows/ckb57rptt0008f46a8imp1mql.html"/>
+    <id>https://vuhks.github.io/windows/ckb57rptt0008f46a8imp1mql.html</id>
     <published>2020-05-29T08:19:20.000Z</published>
-    <updated>2020-06-07T14:03:14.369Z</updated>
+    <updated>2020-06-07T16:22:29.667Z</updated>
     
     <content type="html"><![CDATA[<p>onedrive同步默认同步只能同步onedrive文件夹下的文件，不能把任意路径的文件夹添加到onedrive文件夹下，特此寻找一种方法。<br>参考的<a href="http://suo.im/61pOuI" target="_blank" rel="noopener">ilxin.com</a><br>基本语法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink [&#x2F;d] | [h] | [&#x2F;j] 目标地址 原始地址</span><br></pre></td></tr></table></figure><p>其中，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;d 创建目录符号链接，默认为文件符号链接</span><br><span class="line">&#x2F;h 创建硬链接，而不是符号链接</span><br><span class="line">&#x2F;j 创建目录链接</span><br></pre></td></tr></table></figure><p>例如，将<code>E:\vuhks\blogs</code>路径下的文件夹备份的onedrive目录下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\xxx\onedrive\blogs&quot; &quot;E:\vuhks\blog&quot;</span><br></pre></td></tr></table></figure><p>主要注意的是：  </p><ol><li>mklink 用管理员方式打开 CMD命令  </li><li><code>&quot; &quot;</code>要有，因为<code>/d</code>是符号链接  </li><li>目标地址是onedrive的默认同步的onedrive文件路径，一般是安装onedrive时用户选择的路径  </li><li>关联的blogs文件夹不能存在，因为这个命令会自己建一个blogs名的链接（相当于快捷方式）</li></ol><p>在我看来，就是在onedrive的目录下建一个快捷方式，可以关联到你想要同步的路径下</p><p>成功后显示</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\xxx\onedrive\blogs &lt;&lt;&#x3D;&#x3D;&gt;&gt; E:\vuhks\blog 创建的符号链接</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -169,10 +169,10 @@
   
   <entry>
     <title>新装一个主题snippet</title>
-    <link href="https://vuhks.github.io/[object%20Object]/%E6%96%B0%E8%A3%85%E4%B8%80%E4%B8%AA%E4%B8%BB%E9%A2%98snippet/"/>
-    <id>https://vuhks.github.io/[object%20Object]/%E6%96%B0%E8%A3%85%E4%B8%80%E4%B8%AA%E4%B8%BB%E9%A2%98snippet/</id>
+    <link href="https://vuhks.github.io/blogs/ckb57rpu8000df46a2c3w7rd8.html"/>
+    <id>https://vuhks.github.io/blogs/ckb57rpu8000df46a2c3w7rd8.html</id>
     <published>2020-05-27T19:00:12.000Z</published>
-    <updated>2020-06-07T13:58:11.189Z</updated>
+    <updated>2020-06-07T16:24:20.070Z</updated>
     
     <content type="html"><![CDATA[<p>在看主题优化时看到一篇<a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a>，本来是看一下怎么给next主题分栏，并且不再首页显示文章全部的，看到这片文章推荐的主题后选择了<a href="https://github.com/shenliyang/hexo-theme-snippet#hexo-theme-snippet" target="_blank" rel="noopener">snippet</a>试装，达到了我很多想要的目的，也发现了更多的问题。</p><h2 id="如果想用的话，要解决的问题"><a href="#如果想用的话，要解决的问题" class="headerlink" title="如果想用的话，要解决的问题"></a>如果想用的话，要解决的问题</h2><ol><li>自带很多评论系统，其中有gittalk我想装没装成的gitmet的升级版，还有<br><a href="https://valine.js.org/" target="_blank" rel="noopener">valine</a>自带appid的评论系统。如果用这个主题的话，这个系统可能还要研究一下怎么配置的，账号什么的事怎么回事。    </li><li>主页有一张图片，想换掉。      </li><li>文章目录栏能不能放在右边。     <h2 id="之前没解决的问题"><a href="#之前没解决的问题" class="headerlink" title="之前没解决的问题"></a>之前没解决的问题</h2></li><li>gitment没装成，可能是因为作者不维护的原因，毕竟是17的年的项目。  </li><li>主页文章显示全部</li><li><a href="https://www.jianshu.com/p/3ff20be8574c" target="_blank" rel="noopener">next主题优化</a></li></ol>]]></content>
     
@@ -194,10 +194,10 @@
   
   <entry>
     <title>Next主题配置</title>
-    <link href="https://vuhks.github.io/[object%20Object]/Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
-    <id>https://vuhks.github.io/[object%20Object]/Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://vuhks.github.io/blogs/ckb57rpsy0003f46a8grn38ck.html"/>
+    <id>https://vuhks.github.io/blogs/ckb57rpsy0003f46a8grn38ck.html</id>
     <published>2020-05-27T17:16:59.000Z</published>
-    <updated>2020-06-07T14:03:07.509Z</updated>
+    <updated>2020-06-07T16:32:30.159Z</updated>
     
     <content type="html"><![CDATA[<h1 id="修改next主题文件-config-yml"><a href="#修改next主题文件-config-yml" class="headerlink" title="修改next主题文件_config.yml"></a>修改next主题文件<code>_config.yml</code></h1><p><a href="https://theme-next.js.org/docs/getting-started/" target="_blank" rel="noopener">参考https://theme-next.js.org/docs/getting-started/</a></p><h2 id="添加CDN连接"><a href="#添加CDN连接" class="headerlink" title="添加CDN连接"></a>添加CDN连接</h2><p>修改<code>mediunzoom :true</code>然后使用默认配置</p><h2 id="next方案选择"><a href="#next方案选择" class="headerlink" title="next方案选择"></a>next方案选择</h2><p>在<code>scheme</code>关键字来更改方案<br>默认方案是mise</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">schme: Muse</span><br></pre></td></tr></table></figure><h2 id="启用暗黑模式"><a href="#启用暗黑模式" class="headerlink" title="启用暗黑模式"></a>启用暗黑模式</h2><p>主题NexT会根据系统模式自动切换至黑暗模式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">darkmode: true</span><br></pre></td></tr></table></figure><h2 id="修改站点语言"><a href="#修改站点语言" class="headerlink" title="修改站点语言"></a>修改站点语言</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure><h2 id="配置头像"><a href="#配置头像" class="headerlink" title="配置头像"></a>配置头像</h2><p>侧边栏显示头像</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: &#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: false</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -219,10 +219,10 @@
   
   <entry>
     <title>Markdown基础</title>
-    <link href="https://vuhks.github.io/[object%20Object]/Markdown%E5%9F%BA%E7%A1%80/"/>
-    <id>https://vuhks.github.io/[object%20Object]/Markdown%E5%9F%BA%E7%A1%80/</id>
+    <link href="https://vuhks.github.io/%E7%AC%94%E8%AE%B0/ckb57rpsn0001f46ab9gsgbl1.html"/>
+    <id>https://vuhks.github.io/%E7%AC%94%E8%AE%B0/ckb57rpsn0001f46ab9gsgbl1.html</id>
     <published>2020-05-25T15:24:28.000Z</published>
-    <updated>2020-06-07T15:27:12.195Z</updated>
+    <updated>2020-06-07T16:32:02.888Z</updated>
     
     <content type="html"><![CDATA[<h1 id="什么是Markdown"><a href="#什么是Markdown" class="headerlink" title="什么是Markdown"></a>什么是Markdown</h1><p>markdown一般以.md结尾<br>#Markdown的基本语法<br><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="noopener">markdown基础语法</a></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol><li>有序列表</li><li>无序列表<br>. 无序列表<br>. 有序列表<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><img src="https://s1.ax1x.com/2020/05/28/tVkqDU.jpg" alt="tVkqDU.jpg"><h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><a href="https://vuhks.github.io">vuhks</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[vuhks](https:&#x2F;&#x2F;vuhks.github.io)</span><br></pre></td></tr></table></figure><h2 id="加粗、斜体"><a href="#加粗、斜体" class="headerlink" title="加粗、斜体"></a>加粗、斜体</h2></li></ol><p><strong>加粗</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure><p><em>斜体</em></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure><h2 id="字体颜色和字号"><a href="#字体颜色和字号" class="headerlink" title="字体颜色和字号"></a>字体颜色和字号</h2><p><font face="宋体" color="red" size="18">你好，测试</font></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"宋体"</span> <span class="attr">color</span>=<span class="string">"red"</span> <span class="attr">size</span>=<span class="string">"18"</span>&gt;</span>你好，测试<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h2><center><font face="宋体" color="red" size="18">你好，测试</font></center><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"宋体"</span> <span class="attr">color</span>=<span class="string">"red"</span> <span class="attr">size</span>=<span class="string">"18"</span>&gt;</span>你好，测试<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>## 居右<p align="right"><font face="宋体" color="red" size="18">你好，测试</font></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"宋体"</span> <span class="attr">color</span>=<span class="string">"red"</span> <span class="attr">size</span>=<span class="string">"18"</span>&gt;</span>你好，测试<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
     
