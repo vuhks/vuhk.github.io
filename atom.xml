@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vuhks.github.io/"/>
-  <updated>2020-06-07T15:49:44.785Z</updated>
+  <updated>2020-06-07T16:07:55.353Z</updated>
   <id>https://vuhks.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo deploy时免输密码</title>
+    <link href="https://vuhks.github.io/[object%20Object]/hexo-deploy%E6%97%B6%E5%85%8D%E8%BE%93%E5%AF%86%E7%A0%81/"/>
+    <id>https://vuhks.github.io/[object%20Object]/hexo-deploy%E6%97%B6%E5%85%8D%E8%BE%93%E5%AF%86%E7%A0%81/</id>
+    <published>2020-06-07T16:05:30.000Z</published>
+    <updated>2020-06-07T16:07:55.353Z</updated>
+    
+    <content type="html"><![CDATA[<p>来自csdn(<a href="https://blog.csdn.net/hhgggggg/article/details/77853665" target="_blank" rel="noopener">https://blog.csdn.net/hhgggggg/article/details/77853665</a>)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;来自csdn(&lt;a href=&quot;https://blog.csdn.net/hhgggggg/article/details/77853665&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/hhgggggg/ar
+      
+    
+    </summary>
+    
+    
+      <category term="blogs" scheme="https://vuhks.github.io/categories/blogs/"/>
+    
+    
+      <category term="-Hexo -blogs" scheme="https://vuhks.github.io/tags/Hexo-blogs/"/>
+    
+  </entry>
   
   <entry>
     <title>文章加密测试</title>
