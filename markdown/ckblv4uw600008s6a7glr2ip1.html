@@ -27,11 +27,22 @@
 <meta property="og:site_name" content="vuhks">
 <meta property="og:description" content="在Typora中插入数学公式">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUag1.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKU0u6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUU3R.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKBz4S.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUY4J.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUdjx.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUgCd.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUyUe.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKUsED.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/19/NKU64H.png">
 <meta property="article:published_time" content="2020-06-19T06:41:32.000Z">
-<meta property="article:modified_time" content="2020-06-19T08:19:08.404Z">
+<meta property="article:modified_time" content="2020-06-19T09:00:37.737Z">
 <meta property="article:author" content="vuhks cstg">
 <meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/06/19/NKUag1.png">
 
 <link rel="canonical" href="https://vuhks.github.io/markdown/ckblv4uw600008s6a7glr2ip1.html">
 
@@ -193,7 +204,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-19 14:41:32 / 修改时间：16:19:08" itemprop="dateCreated datePublished" datetime="2020-06-19T14:41:32+08:00">2020-06-19</time>
+              <time title="创建时间：2020-06-19 14:41:32 / 修改时间：17:00:37" itemprop="dateCreated datePublished" datetime="2020-06-19T14:41:32+08:00">2020-06-19</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -232,31 +243,33 @@
 
 <p>$$ \Delta=\frac{b^2-4ac}{c^2} $$</p>
 <h1 id="LaTex数学公式语法"><a href="#LaTex数学公式语法" class="headerlink" title="LaTex数学公式语法"></a>LaTex数学公式语法</h1><p>参考自csdn的<a href="https://blog.csdn.net/guikunchen/article/details/88652407" target="_blank" rel="noopener">LaTex数学公式语法</a></p>
-<h2 id="上标、下标"><a href="#上标、下标" class="headerlink" title="上标、下标"></a>上标、下标</h2><p>上标用^，下标用_</p>
-<figure class="highlight plain"><figcaption><span>X_1```显示为：$ a^2 X_1$</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96;a^&#123;xy&#125; y_&#123;ab&#125;&#96;&#96;&#96;显示为：$$a^&#123;xy&#125; y_&#123;ab&#125;$$</span><br><span class="line"></span><br><span class="line">### 复合型</span><br><span class="line"></span><br><span class="line">用&#123;&#125;进行分割</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;X^&#123;y^&#123;g(x)&#125;&#125;&#96;&#96;&#96;显示为$X^&#123;y^&#123;g(x)&#125;&#125;$</span><br><span class="line"></span><br><span class="line">## 方根&#96;&#96;&#96;\sqrt[]&#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96;\sqrt&#123;a^2+b^2+c^2&#125;&#96;&#96;&#96;显示为$\sqrt&#123;a^2+b^2+c^2&#125;$</span><br><span class="line"></span><br><span class="line">方根语法为&#96;&#96;&#96;\sqrt[n]&#123;&#125;&#96;&#96;&#96;默认$n&#x3D;2$</span><br><span class="line"></span><br><span class="line">## 大括号</span><br><span class="line"></span><br><span class="line">### 水平大括号&#96;&#96;&#96;\overbrace</span><br></pre></td></tr></table></figure>
-
-<p>$\overbrace{1,2,3,\cdots,100}^{100}$，其中用<code>\cdots</code>表示$\cdots$</p>
+<h2 id="上标、下标"><a href="#上标、下标" class="headerlink" title="上标、下标"></a>上标、下标</h2><p>上标用<code>^</code>，下标用<code>_</code><br>        a^2 X_1显示为：$a^2 X_1$</p>
+<p>a^{xy} y_{ab}显示为：$a^{xy} y_{ab}$</p>
+<h3 id="复合型"><a href="#复合型" class="headerlink" title="复合型"></a>复合型</h3><p>用<code>{}</code>进行分割</p>
+<p>X^{y^{g(x)}}显示为$X^{y^{g(x)}}$</p>
+<h2 id="方根-sqrt"><a href="#方根-sqrt" class="headerlink" title="方根\sqrt[]{}"></a>方根\sqrt[]{}</h2><p>\sqrt[3]{a^2+b^2+c^2} 显示为$\sqrt[3]{a^2+b^2+c^2}$</p>
+<p>\sqrt{a^2+b^2+c^2} 显示为$\sqrt{a^2+b^2+c^2}$</p>
+<p>方根语法为<code>\sqrt[n]{}</code>默认$n=2$</p>
+<h2 id="大括号"><a href="#大括号" class="headerlink" title="大括号"></a>大括号</h2><h3 id="水平大括号-overbrace"><a href="#水平大括号-overbrace" class="headerlink" title="水平大括号\overbrace"></a>水平大括号<code>\overbrace</code></h3><p>$\overbrace{1,2,3,\cdots,100}^{100}$，其中用<code>\cdots</code>表示$\cdots$</p>
 <h3 id="日常大括号"><a href="#日常大括号" class="headerlink" title="日常大括号"></a>日常大括号</h3><h2 id="分数-frac"><a href="#分数-frac" class="headerlink" title="分数\frac{}{}"></a>分数<code>\frac{}{}</code></h2><p>$\overline x=\frac {x_1+x_2+x_3}{3}$</p>
 <h2 id="积分-int-a-b"><a href="#积分-int-a-b" class="headerlink" title="积分\int_{a}^{b}{}"></a>积分<code>\int_{a}^{b}{}</code></h2><h3 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h3><p>$$\int{cosxdx}=sinx+c$$</p>
 <h3 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h3><p>$$\int_{a}^{b}f(x)dx=F(b)-F(a)$$</p>
 <h2 id="累加、累乘"><a href="#累加、累乘" class="headerlink" title="累加、累乘"></a>累加、累乘</h2><p>$$\sum\limits_{a}^{b}$$</p>
 <p>$$\prod\limits_{a}^{b}{f(x)}$$</p>
 <h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><p>$$\vec a=\overrightarrow{AB}=-\overleftarrow{BA}$$</p>
-<h1 id="LaTex数学符号常用表"><a href="#LaTex数学符号常用表" class="headerlink" title="LaTex数学符号常用表"></a>LaTex数学符号常用表</h1><h2 id="数学模式重音符"><a href="#数学模式重音符" class="headerlink" title="数学模式重音符"></a>数学模式重音符</h2><p>![image-20200619160645441](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160645441.png)</p>
-<h2 id="小写希腊字母"><a href="#小写希腊字母" class="headerlink" title="小写希腊字母"></a>小写希腊字母</h2><p>![image-20200619160659777](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160659777.png)</p>
-<h2 id="大写希腊字母"><a href="#大写希腊字母" class="headerlink" title="大写希腊字母"></a>大写希腊字母</h2><p>![image-20200619160712621](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160712621.png)</p>
-<h2 id="二元关系符"><a href="#二元关系符" class="headerlink" title="二元关系符"></a>二元关系符</h2><p>![image-20200619160732108](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160732108.png)</p>
-<h2 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h2><p>![image-20200619160747465](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160747465.png)</p>
-<h2 id="大尺寸运算符"><a href="#大尺寸运算符" class="headerlink" title="大尺寸运算符"></a>大尺寸运算符</h2><p>![image-20200619160809004](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160809004.png)</p>
-<h2 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h2><p>![image-20200619160822743](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160822743.png)</p>
-<h2 id="定界符"><a href="#定界符" class="headerlink" title="定界符"></a>定界符</h2><p>![image-20200619160838961](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160838961.png)</p>
-<h2 id="大尺寸定界符"><a href="#大尺寸定界符" class="headerlink" title="大尺寸定界符"></a>大尺寸定界符</h2><p>![image-20200619160850403](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160850403.png)</p>
+<h1 id="LaTex数学符号常用表"><a href="#LaTex数学符号常用表" class="headerlink" title="LaTex数学符号常用表"></a>LaTex数学符号常用表</h1><h2 id="数学模式重音符"><a href="#数学模式重音符" class="headerlink" title="数学模式重音符"></a>数学模式重音符</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUag1.png" alt="NKUag1.png"></p>
+<h2 id="小写希腊字母"><a href="#小写希腊字母" class="headerlink" title="小写希腊字母"></a>小写希腊字母</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKU0u6.png" alt="NKU0u6.png"></p>
+<h2 id="大写希腊字母"><a href="#大写希腊字母" class="headerlink" title="大写希腊字母"></a>大写希腊字母</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUU3R.png" alt="NKUU3R.png"></p>
+<h2 id="二元关系符"><a href="#二元关系符" class="headerlink" title="二元关系符"></a>二元关系符</h2><p>[<img src="https://s1.ax1x.com/2020/06/19/NKBz4S.png" alt="NKBz4S.th.png"></p>
+<h2 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUY4J.png" alt="NKUY4J.png"></p>
+<h2 id="大尺寸运算符"><a href="#大尺寸运算符" class="headerlink" title="大尺寸运算符"></a>大尺寸运算符</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUdjx.png" alt="NKUdjx.png"></p>
+<h2 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUgCd.png" alt="NKUgCd.png"></p>
+<h2 id="定界符"><a href="#定界符" class="headerlink" title="定界符"></a>定界符</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUyUe.png" alt="NKUyUe.png"></p>
+<h2 id="大尺寸定界符"><a href="#大尺寸定界符" class="headerlink" title="大尺寸定界符"></a>大尺寸定界符</h2><p><img src="https://s1.ax1x.com/2020/06/19/NKUsED.png" alt="NKUsED.png"></p>
 <h2 id="其他符号"><a href="#其他符号" class="headerlink" title="其他符号"></a>其他符号</h2><p>省略号<code>\dots</code>：$\dots$</p>
 <p>省略号<code>\cdots</code>：$\cdots$</p>
 <p>空格<code>\quad</code>：测$\quad$试</p>
-<p>![image-20200619160902336](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160902336.png)</p>
+<p><img src="https://s1.ax1x.com/2020/06/19/NKU64H.png" alt="NKU64H.png"></p>
 
     </div>
 
@@ -339,7 +352,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#两种公式模式"><span class="nav-number">1.</span> <span class="nav-text">两种公式模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行内"><span class="nav-number">1.1.</span> <span class="nav-text">行内</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式块"><span class="nav-number">1.2.</span> <span class="nav-text">公式块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LaTex数学公式语法"><span class="nav-number">2.</span> <span class="nav-text">LaTex数学公式语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#上标、下标"><span class="nav-number">2.1.</span> <span class="nav-text">上标、下标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#日常大括号"><span class="nav-number">2.1.1.</span> <span class="nav-text">日常大括号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分数-frac"><span class="nav-number">2.2.</span> <span class="nav-text">分数\frac{}{}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#积分-int-a-b"><span class="nav-number">2.3.</span> <span class="nav-text">积分\int_{a}^{b}{}</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不定积分"><span class="nav-number">2.3.1.</span> <span class="nav-text">不定积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定积分"><span class="nav-number">2.3.2.</span> <span class="nav-text">定积分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#累加、累乘"><span class="nav-number">2.4.</span> <span class="nav-text">累加、累乘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量"><span class="nav-number">2.5.</span> <span class="nav-text">向量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LaTex数学符号常用表"><span class="nav-number">3.</span> <span class="nav-text">LaTex数学符号常用表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学模式重音符"><span class="nav-number">3.1.</span> <span class="nav-text">数学模式重音符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小写希腊字母"><span class="nav-number">3.2.</span> <span class="nav-text">小写希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大写希腊字母"><span class="nav-number">3.3.</span> <span class="nav-text">大写希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二元关系符"><span class="nav-number">3.4.</span> <span class="nav-text">二元关系符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二元运算符"><span class="nav-number">3.5.</span> <span class="nav-text">二元运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大尺寸运算符"><span class="nav-number">3.6.</span> <span class="nav-text">大尺寸运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#箭头"><span class="nav-number">3.7.</span> <span class="nav-text">箭头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定界符"><span class="nav-number">3.8.</span> <span class="nav-text">定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大尺寸定界符"><span class="nav-number">3.9.</span> <span class="nav-text">大尺寸定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他符号"><span class="nav-number">3.10.</span> <span class="nav-text">其他符号</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#两种公式模式"><span class="nav-number">1.</span> <span class="nav-text">两种公式模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行内"><span class="nav-number">1.1.</span> <span class="nav-text">行内</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式块"><span class="nav-number">1.2.</span> <span class="nav-text">公式块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LaTex数学公式语法"><span class="nav-number">2.</span> <span class="nav-text">LaTex数学公式语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#上标、下标"><span class="nav-number">2.1.</span> <span class="nav-text">上标、下标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#复合型"><span class="nav-number">2.1.1.</span> <span class="nav-text">复合型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方根-sqrt"><span class="nav-number">2.2.</span> <span class="nav-text">方根\sqrt[]{}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大括号"><span class="nav-number">2.3.</span> <span class="nav-text">大括号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#水平大括号-overbrace"><span class="nav-number">2.3.1.</span> <span class="nav-text">水平大括号\overbrace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日常大括号"><span class="nav-number">2.3.2.</span> <span class="nav-text">日常大括号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分数-frac"><span class="nav-number">2.4.</span> <span class="nav-text">分数\frac{}{}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#积分-int-a-b"><span class="nav-number">2.5.</span> <span class="nav-text">积分\int_{a}^{b}{}</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不定积分"><span class="nav-number">2.5.1.</span> <span class="nav-text">不定积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定积分"><span class="nav-number">2.5.2.</span> <span class="nav-text">定积分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#累加、累乘"><span class="nav-number">2.6.</span> <span class="nav-text">累加、累乘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量"><span class="nav-number">2.7.</span> <span class="nav-text">向量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LaTex数学符号常用表"><span class="nav-number">3.</span> <span class="nav-text">LaTex数学符号常用表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学模式重音符"><span class="nav-number">3.1.</span> <span class="nav-text">数学模式重音符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小写希腊字母"><span class="nav-number">3.2.</span> <span class="nav-text">小写希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大写希腊字母"><span class="nav-number">3.3.</span> <span class="nav-text">大写希腊字母</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二元关系符"><span class="nav-number">3.4.</span> <span class="nav-text">二元关系符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二元运算符"><span class="nav-number">3.5.</span> <span class="nav-text">二元运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大尺寸运算符"><span class="nav-number">3.6.</span> <span class="nav-text">大尺寸运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#箭头"><span class="nav-number">3.7.</span> <span class="nav-text">箭头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定界符"><span class="nav-number">3.8.</span> <span class="nav-text">定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大尺寸定界符"><span class="nav-number">3.9.</span> <span class="nav-text">大尺寸定界符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他符号"><span class="nav-number">3.10.</span> <span class="nav-text">其他符号</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -493,6 +506,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
