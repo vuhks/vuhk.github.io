@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vuhks.github.io/"/>
-  <updated>2020-06-19T06:41:32.482Z</updated>
+  <updated>2020-06-19T08:19:08.404Z</updated>
   <id>https://vuhks.github.io/</id>
   
   <author>
@@ -18,16 +18,24 @@
   
   <entry>
     <title>LaTex数学公式语法</title>
-    <link href="https://vuhks.github.io/uncategorized/ckblv4uw600008s6a7glr2ip1.html"/>
-    <id>https://vuhks.github.io/uncategorized/ckblv4uw600008s6a7glr2ip1.html</id>
+    <link href="https://vuhks.github.io/markdown/ckblv4uw600008s6a7glr2ip1.html"/>
+    <id>https://vuhks.github.io/markdown/ckblv4uw600008s6a7glr2ip1.html</id>
     <published>2020-06-19T06:41:32.000Z</published>
-    <updated>2020-06-19T06:41:32.482Z</updated>
+    <updated>2020-06-19T08:19:08.404Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="两种公式模式"><a href="#两种公式模式" class="headerlink" title="两种公式模式"></a>两种公式模式</h1><p>在Typora中可以修改为LaTex公式插入，其中有两种模式行内（内联）公式和公式块。</p><h2 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ a^2+b^2&#x3D;c^2 $</span><br></pre></td></tr></table></figure><p>显示为$ a^2+b^2=c^2 $</p><h2 id="公式块"><a href="#公式块" class="headerlink" title="公式块"></a>公式块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ \Delta&#x3D;\frac&#123;b^2-4ac&#125;&#123;c^2&#125; $$</span><br></pre></td></tr></table></figure><p>$$ \Delta=\frac{b^2-4ac}{c^2} $$</p><h1 id="LaTex数学公式语法"><a href="#LaTex数学公式语法" class="headerlink" title="LaTex数学公式语法"></a>LaTex数学公式语法</h1><p>参考自csdn的<a href="https://blog.csdn.net/guikunchen/article/details/88652407" target="_blank" rel="noopener">LaTex数学公式语法</a></p><h2 id="上标、下标"><a href="#上标、下标" class="headerlink" title="上标、下标"></a>上标、下标</h2><p>上标用^，下标用_</p><figure class="highlight plain"><figcaption><span>X_1```显示为：$ a^2 X_1$</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96;a^&#123;xy&#125; y_&#123;ab&#125;&#96;&#96;&#96;显示为：$$a^&#123;xy&#125; y_&#123;ab&#125;$$</span><br><span class="line"></span><br><span class="line">### 复合型</span><br><span class="line"></span><br><span class="line">用&#123;&#125;进行分割</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;X^&#123;y^&#123;g(x)&#125;&#125;&#96;&#96;&#96;显示为$X^&#123;y^&#123;g(x)&#125;&#125;$</span><br><span class="line"></span><br><span class="line">## 方根&#96;&#96;&#96;\sqrt[]&#123;&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96;\sqrt&#123;a^2+b^2+c^2&#125;&#96;&#96;&#96;显示为$\sqrt&#123;a^2+b^2+c^2&#125;$</span><br><span class="line"></span><br><span class="line">方根语法为&#96;&#96;&#96;\sqrt[n]&#123;&#125;&#96;&#96;&#96;默认$n&#x3D;2$</span><br><span class="line"></span><br><span class="line">## 大括号</span><br><span class="line"></span><br><span class="line">### 水平大括号&#96;&#96;&#96;\overbrace</span><br></pre></td></tr></table></figure><p>$\overbrace{1,2,3,\cdots,100}^{100}$，其中用<code>\cdots</code>表示$\cdots$</p><h3 id="日常大括号"><a href="#日常大括号" class="headerlink" title="日常大括号"></a>日常大括号</h3><h2 id="分数-frac"><a href="#分数-frac" class="headerlink" title="分数\frac{}{}"></a>分数<code>\frac{}{}</code></h2><p>$\overline x=\frac {x_1+x_2+x_3}{3}$</p><h2 id="积分-int-a-b"><a href="#积分-int-a-b" class="headerlink" title="积分\int_{a}^{b}{}"></a>积分<code>\int_{a}^{b}{}</code></h2><h3 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h3><p>$$\int{cosxdx}=sinx+c$$</p><h3 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h3><p>$$\int_{a}^{b}f(x)dx=F(b)-F(a)$$</p><h2 id="累加、累乘"><a href="#累加、累乘" class="headerlink" title="累加、累乘"></a>累加、累乘</h2><p>$$\sum\limits_{a}^{b}$$</p><p>$$\prod\limits_{a}^{b}{f(x)}$$</p><h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><p>$$\vec a=\overrightarrow{AB}=-\overleftarrow{BA}$$</p><h1 id="LaTex数学符号常用表"><a href="#LaTex数学符号常用表" class="headerlink" title="LaTex数学符号常用表"></a>LaTex数学符号常用表</h1><h2 id="数学模式重音符"><a href="#数学模式重音符" class="headerlink" title="数学模式重音符"></a>数学模式重音符</h2><p>![image-20200619160645441](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160645441.png)</p><h2 id="小写希腊字母"><a href="#小写希腊字母" class="headerlink" title="小写希腊字母"></a>小写希腊字母</h2><p>![image-20200619160659777](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160659777.png)</p><h2 id="大写希腊字母"><a href="#大写希腊字母" class="headerlink" title="大写希腊字母"></a>大写希腊字母</h2><p>![image-20200619160712621](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160712621.png)</p><h2 id="二元关系符"><a href="#二元关系符" class="headerlink" title="二元关系符"></a>二元关系符</h2><p>![image-20200619160732108](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160732108.png)</p><h2 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h2><p>![image-20200619160747465](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160747465.png)</p><h2 id="大尺寸运算符"><a href="#大尺寸运算符" class="headerlink" title="大尺寸运算符"></a>大尺寸运算符</h2><p>![image-20200619160809004](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160809004.png)</p><h2 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h2><p>![image-20200619160822743](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160822743.png)</p><h2 id="定界符"><a href="#定界符" class="headerlink" title="定界符"></a>定界符</h2><p>![image-20200619160838961](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160838961.png)</p><h2 id="大尺寸定界符"><a href="#大尺寸定界符" class="headerlink" title="大尺寸定界符"></a>大尺寸定界符</h2><p>![image-20200619160850403](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160850403.png)</p><h2 id="其他符号"><a href="#其他符号" class="headerlink" title="其他符号"></a>其他符号</h2><p>省略号<code>\dots</code>：$\dots$</p><p>省略号<code>\cdots</code>：$\cdots$</p><p>空格<code>\quad</code>：测$\quad$试</p><p>![image-20200619160902336](e:\mutou\Pictures\Saved Pictures\建站\image-20200619160902336.png)</p>]]></content>
     
     <summary type="html">
+    
+      在Typora中插入数学公式
     
     </summary>
     
     
+      <category term="markdown" scheme="https://vuhks.github.io/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="https://vuhks.github.io/tags/markdown/"/>
     
   </entry>
   
