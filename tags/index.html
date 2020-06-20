@@ -17,6 +17,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="otWvGWGNYR">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -194,10 +195,10 @@
       <div class="post-body">
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              目前共计 11 个标签
+              目前共计 12 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/blogs/" style="font-size: 30px; color: #111">blogs</a> <a href="/tags/markdown/" style="font-size: 21px; color: #6f6f6f">markdown</a> <a href="/tags/windows/" style="font-size: 12px; color: #ccc">windows</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 12px; color: #ccc">博客</a> <a href="/tags/%E6%9D%82%E8%AE%B0/" style="font-size: 12px; color: #ccc">杂记</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12px; color: #ccc">生活</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 12px; color: #ccc">笔记</a> <a href="/tags/%E7%BD%97%E7%BF%94/" style="font-size: 12px; color: #ccc">罗翔</a> <a href="/tags/%E8%BE%A9%E8%AE%BA/" style="font-size: 12px; color: #ccc">辩论</a> <a href="/tags/%E9%85%8D%E7%BD%AE/" style="font-size: 12px; color: #ccc">配置</a>
+              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/blogs/" style="font-size: 30px; color: #111">blogs</a> <a href="/tags/markdown/" style="font-size: 21px; color: #6f6f6f">markdown</a> <a href="/tags/windows/" style="font-size: 12px; color: #ccc">windows</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 12px; color: #ccc">博客</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 12px; color: #ccc">日记</a> <a href="/tags/%E6%9D%82%E8%AE%B0/" style="font-size: 12px; color: #ccc">杂记</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12px; color: #ccc">生活</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 12px; color: #ccc">笔记</a> <a href="/tags/%E7%BD%97%E7%BF%94/" style="font-size: 12px; color: #ccc">罗翔</a> <a href="/tags/%E8%BE%A9%E8%AE%BA/" style="font-size: 12px; color: #ccc">辩论</a> <a href="/tags/%E9%85%8D%E7%BD%AE/" style="font-size: 12px; color: #ccc">配置</a>
             </div>
           </div>
         
@@ -215,7 +216,11 @@
 
           </div>
           
-    <div class="comments" id="gitalk-container"></div>
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MDU5Mi8yNzA3NQ=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -278,20 +283,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -421,23 +426,19 @@
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
 <script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '5058e01af50f4d3cc51d',
-      clientSecret: '0c0e444da85f9912c1589ed3521096ff2ba42a01',
-      repo        : 'vuhks.io_gitmit',
-      owner       : 'vuhks',
-      admin       : ['vuhks'],
-      id          : 'f47af1d1eda4d807b02bba32be15120b',
-        language: 'zh-CN',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 });
 </script>
 
