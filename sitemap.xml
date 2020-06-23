@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vuhks.github.io/%E6%95%99%E7%A8%8B/test2.html</loc>
+    
+    <lastmod>2020-06-23T05:40:52.771Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vuhks.github.io/windows/bat1.html</loc>
     
-    <lastmod>2020-06-22T08:47:44.778Z</lastmod>
+    <lastmod>2020-06-22T10:06:15.374Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vuhks.github.io/blogs/Hexo-theme.html</loc>
+    
+    <lastmod>2020-06-21T17:46:01.999Z</lastmod>
     
   </url>
   
@@ -75,20 +89,6 @@
     <loc>https://vuhks.github.io/blogs/hexo-deploy.html</loc>
     
     <lastmod>2020-06-21T17:31:08.313Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vuhks.github.io/%E6%95%99%E7%A8%8B/test2.html</loc>
-    
-    <lastmod>2020-06-21T17:05:54.979Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vuhks.github.io/blogs/Hexo-theme.html</loc>
-    
-    <lastmod>2020-06-21T16:50:26.262Z</lastmod>
     
   </url>
   
