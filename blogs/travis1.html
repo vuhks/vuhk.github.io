@@ -24,15 +24,22 @@
     var CONFIG = {"hostname":"vuhks.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="vuhks">
-<meta property="og:url" content="https://vuhks.github.io/tags/%E5%8D%9A%E5%AE%A2/index.html">
+  <meta name="description" content="之前就看到过这篇文章，但是觉得太麻烦，而且会把自己的md文档暴露，就没弄。最近重装了一下系统，发现重新部署hexo会有很多东西忘记，所以想把源码push到github上。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Travis CI自动化部署Hexo">
+<meta property="og:url" content="https://vuhks.github.io/blogs/travis1.html">
 <meta property="og:site_name" content="vuhks">
+<meta property="og:description" content="之前就看到过这篇文章，但是觉得太麻烦，而且会把自己的md文档暴露，就没弄。最近重装了一下系统，发现重新部署hexo会有很多东西忘记，所以想把源码push到github上。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-26T16:33:34.000Z">
+<meta property="article:modified_time" content="2020-06-26T17:55:22.394Z">
 <meta property="article:author" content="vuhks">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="CI">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://vuhks.github.io/tags/%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="https://vuhks.github.io/blogs/travis1.html">
 
 
 <script id="page-configurations">
@@ -40,12 +47,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 博客 | vuhks</title>
+  <title>使用Travis CI自动化部署Hexo | vuhks</title>
   
 
 
@@ -150,51 +157,129 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">博客
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://vuhks.github.io/blogs/travis1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="vuhks">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vuhks">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用Travis CI自动化部署Hexo
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-27 00:33:34 / 修改时间：01:55:22" itemprop="dateCreated datePublished" datetime="2020-06-27T00:33:34+08:00">2020-06-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blogs/" itemprop="url" rel="index"><span itemprop="name">blogs</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">之前就看到过这篇文章，但是觉得太麻烦，而且会把自己的md文档暴露，就没弄。最近重装了一下系统，发现重新部署hexo会有很多东西忘记，所以想把源码push到github上。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>来自是参考这篇(<a href="https://www.jianshu.com/p/93918de6fa2c" target="_blank" rel="noopener">https://www.jianshu.com/p/93918de6fa2c</a>) ，按部就班的操作的，操作下来还是发现了一些问题，主要是对Git的命令了解导致的。</p>
+<h1 id="Travis-CI的使用"><a href="#Travis-CI的使用" class="headerlink" title="Travis CI的使用"></a>Travis CI的使用</h1><p>在登陆<a href="https://link.jianshu.com/?t=https://travis-ci.org/" target="_blank" rel="noopener">Travis CI官网</a>，选择Github源码仓库，一直到配置github的Access Token上是没有问题的。在配置.travis.yml时出了很多问题，下面是现在能回想的几个问题。</p>
+<ol>
+<li>push到仓库时该文件上不去，后来也不知道怎么回事能上去了。在解决该问题的时候又重新学习了git的一系列命令</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="literal">-v</span></span><br><span class="line">git remote add origin [<span class="type">ssh</span>地址]</span><br><span class="line">git branch <span class="literal">-a</span></span><br><span class="line">git branch <span class="literal">-r</span></span><br><span class="line">git branch [<span class="type">newbranch</span>]</span><br><span class="line">git checkout [<span class="type">branch</span>]</span><br><span class="line">git add .</span><br><span class="line">git commit <span class="literal">-m</span> <span class="string">"[commit]"</span></span><br><span class="line">git push origin [<span class="type">branch</span>]</span><br></pre></td></tr></table></figure>
+
+<p>经过不知道是什么的尝试之后，push成功了，其中做过删库操作，我觉得是这个操作解决的</p>
+<ol start="2">
+<li>修改过几次.travis.yml文件（<del>瞎改</del>）</li>
+</ol>
+<p>由于我是用yarn安装的hexo和一些插件，怕后面源码跟tr搭建的环境无法匹配，就修改了install的一些命令，发现修改后出错了，出错的地方就是yarn的语法错误，所以我删掉了</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">install</span>:</span><br><span class="line">	-npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
+
+<p>发现语法没错了。但我不知道用npm与yarn有什么区别，应该是没有的，我不修改应该也是不会出问题的。但我之前看过yarn比npm的优点，记得文件目录是不太一样的，具体记不太清了。</p>
+<ol start="3">
+<li><p>branch的问题</p>
+<p>这个不知道原博主是怎么操作的，可能由于我对git的命令不熟悉，导致我本地的文件目录弄混了，不知道哪是哪了，后来就直接用master分支了，这其中就又涉及到了删除本地与远程分支的问题。看了一下教程，最后还是删库解决的。真是错误百出啊。</p>
+</li>
+</ol>
+<h1 id="隐私问题"><a href="#隐私问题" class="headerlink" title="隐私问题"></a>隐私问题</h1><p>   我的博客中有一些加密的文章，我直接上传源码的行为很蠢，所以现在想做的是把带有加密的md文件从源码中删除，自己从本地deploy。</p>
+<p>   已解决：push的时候忽略文件，直接修改.gitignoire文件，加入想忽略的目录</p>
+<p>   这衍生出的一个问题是，修改hexo/source/_post/中的目录结构后，影响hexo的生成吗？测试结果是不影响，具体的逻辑不知道。</p>
+<p>  可能出现的问题：</p>
+<ol>
+<li>自动化部署的时候会不会降我自己部署的文章给删掉？这个还没测试。</li>
+<li>如果删掉，怎么解决？能不能修改.travis.yml文件，或者给Travis增加一些限制，不让它动我的某些文档</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-06-07T23:45:10+08:00"
-              content="2020-06-07">
-          06-07
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/CI/" rel="tag"># CI</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/Tutorial/test2.html" itemprop="url">
-            <span itemprop="name">文章加密测试</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/windows/bat1.html" rel="prev" title="bat脚本学习">
+      <i class="fa fa-chevron-left"></i> bat脚本学习
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/uncategorized/35700.html" rel="next" title="TravisCI自动化部署">
+      TravisCI自动化部署 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -248,6 +333,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Travis-CI的使用"><span class="nav-text">Travis CI的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#隐私问题"><span class="nav-text">隐私问题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -406,7 +492,7 @@
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://vuhks.github.io/tags/%E5%8D%9A%E5%AE%A2/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://vuhks.github.io/blogs/travis1.html',]
       });
       });
   </script>
