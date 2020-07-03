@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://vuhks.github.io/diary/0621.html</loc>
+    <lastmod>2020-06-26</lastmod>
+  </url>  <url>
+    <loc>https://vuhks.github.io/Tutorial/test2.html</loc>
+    <lastmod>2020-06-26</lastmod>
+  </url>  <url>
     <loc>https://vuhks.github.io/blogs/travis1.html</loc>
     <lastmod>2020-06-26</lastmod>
   </url>  <url>
@@ -8,9 +14,6 @@
     <lastmod>2020-06-26</lastmod>
   </url>  <url>
     <loc>https://vuhks.github.io/notes/zvik1.html</loc>
-    <lastmod>2020-06-26</lastmod>
-  </url>  <url>
-    <loc>https://vuhks.github.io/Tutorial/test2.html</loc>
     <lastmod>2020-06-26</lastmod>
   </url>  <url>
     <loc>https://vuhks.github.io/windows/bat1.html</loc>
@@ -39,8 +42,5 @@
   </url>  <url>
     <loc>https://vuhks.github.io/blogs/Hexo-theme.html</loc>
     <lastmod>2020-06-26</lastmod>
-  </url>  <url>
-    <loc>https://vuhks.github.io/diary/0621.html</loc>
-    <lastmod>2020-06-21</lastmod>
   </url>
 </urlset>

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vuhks.github.io/diary/0621.html</loc>
+    
+    <lastmod>2020-06-26T18:28:04.173Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vuhks.github.io/Tutorial/test2.html</loc>
+    
+    <lastmod>2020-06-26T18:26:59.250Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vuhks.github.io/blogs/travis1.html</loc>
     
     <lastmod>2020-06-26T17:55:22.394Z</lastmod>
@@ -17,13 +31,6 @@
   
   <url>
     <loc>https://vuhks.github.io/notes/zvik1.html</loc>
-    
-    <lastmod>2020-06-26T13:46:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vuhks.github.io/Tutorial/test2.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
     
@@ -117,13 +124,6 @@
     <loc>https://vuhks.github.io/tags/index.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vuhks.github.io/diary/0621.html</loc>
-    
-    <lastmod>2020-06-21T17:41:09.000Z</lastmod>
     
   </url>
   
