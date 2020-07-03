@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vuhks.github.io/"/>
-  <updated>2020-06-26T17:55:22.394Z</updated>
+  <updated>2020-07-03T08:26:55.934Z</updated>
   <id>https://vuhks.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ceui</title>
+    <link href="https://vuhks.github.io/uncategorized/58856.html"/>
+    <id>https://vuhks.github.io/uncategorized/58856.html</id>
+    <published>2020-07-03T08:26:55.000Z</published>
+    <updated>2020-07-03T08:26:55.934Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ceui</title>
+    <link href="https://vuhks.github.io/test/ceui.html"/>
+    <id>https://vuhks.github.io/test/ceui.html</id>
+    <published>2020-07-03T08:26:07.000Z</published>
+    <updated>2020-07-03T08:32:37.216Z</updated>
+    
+    <content type="html"><![CDATA[<p>ceui</p><p>hello,world</p>]]></content>
+    
+    <summary type="html">
+    
+      This is a test
+    
+    </summary>
+    
+    
+      <category term="test" scheme="https://vuhks.github.io/categories/test/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用Travis CI自动化部署Hexo</title>
