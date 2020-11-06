@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vuhks.github.io/python/sublime.html</loc>
+    
+    <lastmod>2020-11-06T08:58:37.253Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vuhks.github.io/markdown/LaTex1.html</loc>
     
     <lastmod>2020-07-26T03:25:38.119Z</lastmod>
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://vuhks.github.io/blogs/test1.html</loc>
+    <loc>https://vuhks.github.io/notes/zvik1.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://vuhks.github.io/notes/zvik1.html</loc>
+    <loc>https://vuhks.github.io/blogs/test1.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
     
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://vuhks.github.io/blogs/hexo-deploy.html</loc>
+    <loc>https://vuhks.github.io/blogs/hexo-next2.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://vuhks.github.io/blogs/hexo-next2.html</loc>
+    <loc>https://vuhks.github.io/blogs/hexo-deploy.html</loc>
     
     <lastmod>2020-06-26T13:46:25.000Z</lastmod>
     

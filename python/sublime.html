@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="lX6-BQnE4Fb_LbgTEXlwXvKoZ_kfR9zyxAAIgYl-rU4">
+  <meta name="msvalidate.01" content="E2F7014D76D148EA1C26BF87A71258EA">
+  <meta name="baidu-site-verification" content="otWvGWGNYR">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"vuhks.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="sublime插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sublime安装后设置">
+<meta property="og:url" content="https://vuhks.github.io/python/sublime.html">
+<meta property="og:site_name" content="vuhks">
+<meta property="og:description" content="sublime插件">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-06T08:51:47.000Z">
+<meta property="article:modified_time" content="2020-11-06T08:58:37.253Z">
+<meta property="article:author" content="vuhks">
+<meta property="article:tag" content="sublime3">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://vuhks.github.io/python/sublime.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>sublime安装后设置 | vuhks</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="vuhks" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">vuhks</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">壁立千仞，无欲则刚</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://vuhks.github.io/python/sublime.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="vuhks">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vuhks">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          sublime安装后设置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-06 16:51:47 / 修改时间：16:58:37" itemprop="dateCreated datePublished" datetime="2020-11-06T16:51:47+08:00">2020-11-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">sublime插件</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="装机"><a href="#装机" class="headerlink" title="装机"></a>装机</h2><h3 id="1-convertToUTF8"><a href="#1-convertToUTF8" class="headerlink" title="1.convertToUTF8"></a>1.convertToUTF8</h3><p>功能说明：ConvertToUTF8 能将除UTF8编码之外的其他编码文件在 Sublime Text 中转换成UTF8编码，在打开文件的时候一开始会显示乱码，然后一刹那就自动显示出正常的字体，当然，在保存文件之后原文件的编码格式不会改变。</p>
+<h3 id="2-BracketHighlighter-插件"><a href="#2-BracketHighlighter-插件" class="headerlink" title="2.BracketHighlighter 插件"></a>2.BracketHighlighter 插件</h3><p>功能说明：高亮显示匹配的括号、引号和标签。</p>
+<h3 id="3-JsFormat-插件"><a href="#3-JsFormat-插件" class="headerlink" title="3.JsFormat 插件"></a>3.JsFormat 插件</h3><p>功能说明：JavaScript代码格式化。</p>
+<p>使用方法：在打开的JavaScript文件里点右键，选择JsFormat</p>
+<h3 id="4-Alignment-插件"><a href="#4-Alignment-插件" class="headerlink" title="4.Alignment 插件"></a>4.Alignment 插件</h3><p>功能说明：使代码格式的自动对齐。</p>
+<p>安装方法：Ctrl+Shift+P面板，安装插件。</p>
+<p>使用方法：快捷键 Ctrl+Alt+A</p>
+<h3 id="设置注释颜色"><a href="#设置注释颜色" class="headerlink" title="设置注释颜色"></a>设置注释颜色</h3><p>1.安装插件resource view</p>
+<p>2.打开package resource viewer:open resource</p>
+<p>3.查找color scheme-default</p>
+<p>4.选择monokai，即可打开monokai.sublime-color-scheme</p>
+<p>5.修改comment中的foreground的值为green，或自定义</p>
+<p>6.自定义       </p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"green1"</span>: <span class="string">"hsl(128, 54%, 85%)"</span>,</span><br><span class="line"><span class="string">"green2"</span>: <span class="string">"hsl(126, 37%, 85%)"</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，hsl值需要转换</p>
+<h2 id="python-环境"><a href="#python-环境" class="headerlink" title="python 环境"></a>python 环境</h2><h3 id="1-编译环境"><a href="#1-编译环境" class="headerlink" title="1.编译环境"></a>1.编译环境</h3><p>1、打开Tools &gt; Build System &gt; New Build System..</p>
+<p>2、点击New Build System后，会生成一个空配置文件，在这个配置文件内覆盖配置信息，本文python安装路径为“D:/Anaconda3”，（注意区分正反斜杠，请将路径换成python实际安装路径），然后按ctrl+s，将文件保存在默认路径，文件名命名为“Python3”</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">"cmd"</span>: [<span class="string">"python.exe"</span> ,<span class="string">"-u"</span>,<span class="string">"$file"</span>],  </span><br><span class="line"><span class="attr">"path"</span>:<span class="string">"D:/Program Files/python/Python38"</span>,</span><br><span class="line"><span class="attr">"file_regex"</span>: <span class="string">"^[ ]*File \"(...*?)\", line ([0-9]*)"</span>,  </span><br><span class="line"><span class="attr">"selector"</span>: <span class="string">"source.python"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-codeintel"><a href="#2-codeintel" class="headerlink" title="2.codeintel"></a>2.codeintel</h3><p>点击preferences中的browse Packages，进入SublimeCodeIntel文件夹，在当前的路径下新建.codeintel文件夹(<strong>windows中文件命名的时候为 .codeintel.</strong> )，之后进入到 .codeintel文件夹中，新建文件“config.log”文件，打开输入（下文以路径“D:\Anaconda3”为例，实际配置时请根据具体安装路径修改）：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"python3"</span>:&#123;</span><br><span class="line">    <span class="string">"python"</span>:<span class="string">"D:/Anaconda3/python.exe"</span>,</span><br><span class="line">    <span class="string">"pythonExtraPaths"</span>:[</span><br><span class="line">         <span class="string">"D:/Anaconda3/DLLs"</span>,</span><br><span class="line">         <span class="string">"D:/Anaconda3/Lib"</span>,</span><br><span class="line">         <span class="string">"D:/Anaconda3/Lib/lib-tk"</span>,</span><br><span class="line">         <span class="string">"D:/Anaconda3/Lib/site-packages"</span>,</span><br><span class="line">    				]</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-sublimeRERL"><a href="#3-sublimeRERL" class="headerlink" title="3.sublimeRERL"></a>3.sublimeRERL</h3><h4 id="3-1-环境变量"><a href="#3-1-环境变量" class="headerlink" title="3.1 环境变量"></a>3.1 环境变量</h4><p>REPL使用的是系统默认环境变量的路径，先在系统高级设置中添加python路径，也可修改为自定义</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"default_extend_env"</span>: &#123;<span class="string">"PATH"</span>: <span class="string">"D:\\Program Files\\python\\Python38"</span>&#125;</span><br><span class="line">&#125;</span><br><span class="line">或</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"default_extend_env"</span>: &#123;<span class="string">"PATH"</span>: <span class="string">"&#123;PATH&#125;;D:\\Program Files\\python\\Python38"</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-快捷键设置"><a href="#3-2-快捷键设置" class="headerlink" title="3.2 快捷键设置"></a>3.2 快捷键设置</h4><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">&#123;</span><br><span class="line">//运行当前文件</span><br><span class="line"><span class="string">"keys"</span>: [<span class="string">"f5"</span>],</span><br><span class="line"><span class="string">"command"</span>: <span class="string">"repl_open"</span>,</span><br><span class="line"><span class="string">"caption"</span>: <span class="string">"Python - RUN current file"</span>,</span><br><span class="line"><span class="string">"id"</span>: <span class="string">"repl_python_run"</span>,</span><br><span class="line"><span class="string">"mnemonic"</span>: <span class="string">"R"</span>,</span><br><span class="line"><span class="string">"args"</span>: &#123;</span><br><span class="line">	<span class="string">"type"</span>: <span class="string">"subprocess"</span>,</span><br><span class="line">	<span class="string">"encoding"</span>: <span class="string">"utf8"</span>,</span><br><span class="line">	<span class="string">"cmd"</span>: [<span class="string">"python"</span>, <span class="string">"-u"</span>, <span class="string">"<span class="variable">$file_basename</span>"</span>],</span><br><span class="line">	<span class="string">"cwd"</span>: <span class="string">"<span class="variable">$file_path</span>"</span>,</span><br><span class="line">	<span class="string">"syntax"</span>: <span class="string">"Packages/Python/Python.tmLanguage"</span>,</span><br><span class="line">	<span class="string">"external_id"</span>: <span class="string">"python"</span>,</span><br><span class="line">	<span class="string">"extend_env"</span>: &#123;<span class="string">"PYTHONIOENCODING"</span>: <span class="string">"utf-8"</span>&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&#125;,</span><br><span class="line"> </span><br><span class="line">&#123;</span><br><span class="line">//调试当前文件</span><br><span class="line"><span class="string">"keys"</span>: [<span class="string">"f8"</span>],</span><br><span class="line"><span class="string">"caption"</span>: <span class="string">"SublimeREPL: Python - PDB current file"</span>,</span><br><span class="line"><span class="string">"command"</span>: <span class="string">"repl_open"</span>,</span><br><span class="line"><span class="string">"mnemonic"</span>: <span class="string">"D"</span>,</span><br><span class="line"><span class="string">"args"</span>:</span><br><span class="line">&#123;</span><br><span class="line">	<span class="string">"type"</span>: <span class="string">"subprocess"</span>,</span><br><span class="line">	<span class="string">"encoding"</span>: <span class="string">"utf8"</span>,</span><br><span class="line">	<span class="string">"cmd"</span>: [<span class="string">"python"</span>, <span class="string">"-i"</span>, <span class="string">"-u"</span>, <span class="string">"-m"</span>, <span class="string">"pdb"</span>, <span class="string">"<span class="variable">$file_basename</span>"</span>],</span><br><span class="line">	<span class="string">"cwd"</span>: <span class="string">"<span class="variable">$file_path</span>"</span>,</span><br><span class="line">	<span class="string">"syntax"</span>: <span class="string">"Packages/Python/Python.tmLanguage"</span>,</span><br><span class="line">	<span class="string">"external_id"</span>: <span class="string">"python"</span>,</span><br><span class="line">	<span class="string">"extend_env"</span>: &#123;<span class="string">"PYTHONIOENCODING"</span>: <span class="string">"utf-8"</span>&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/sublime3/" rel="tag"># sublime3</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/hexo/hexo_vps.html" rel="prev" title="Hexo部署到ipv6only vps ">
+      <i class="fa fa-chevron-left"></i> Hexo部署到ipv6only vps 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#装机"><span class="nav-text">装机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-convertToUTF8"><span class="nav-text">1.convertToUTF8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-BracketHighlighter-插件"><span class="nav-text">2.BracketHighlighter 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-JsFormat-插件"><span class="nav-text">3.JsFormat 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Alignment-插件"><span class="nav-text">4.Alignment 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置注释颜色"><span class="nav-text">设置注释颜色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python-环境"><span class="nav-text">python 环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-编译环境"><span class="nav-text">1.编译环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-codeintel"><span class="nav-text">2.codeintel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-sublimeRERL"><span class="nav-text">3.sublimeRERL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-环境变量"><span class="nav-text">3.1 环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-快捷键设置"><span class="nav-text">3.2 快捷键设置</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="vuhks"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">vuhks</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/vuhks" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vuhks" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:vuhks.cstg@gmail.com" title="E-Mail → mailto:vuhks.cstg@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">vuhks</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://vuhks.github.io/python/sublime.html',]
+      });
+      });
+  </script>
+
+
+</body>
+</html>
