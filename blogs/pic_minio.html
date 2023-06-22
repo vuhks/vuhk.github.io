@@ -49,6 +49,12 @@
 <meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/16/image-20230610104323821.png">
 <meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616164939096.png">
 <meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616164905957.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616170105987.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622111805360.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622112030790.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622153525132.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622150949142.png">
+<meta property="og:image" content="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622163602145.png">
 <meta property="article:published_time" content="2023-06-09T09:01:36.000Z">
 <meta property="article:modified_time" content="2023-06-09T09:01:36.000Z">
 <meta property="article:author" content="vuhks">
@@ -243,7 +249,7 @@
 <h2 id="1-搭建图床"><a href="#1-搭建图床" class="headerlink" title="1.搭建图床"></a>1.搭建图床</h2><p>这里是参考知乎<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/139529477">Minio+Nginx搭建私有图床，写博客从未这么爽  </a>来完成的。</p>
 <p>我是直接搭建在自己的黑群晖上（内网穿透等可以再写一篇记录一下），以下是具体实现步骤。</p>
 <h3 id="1-1-MinIO-docker搭建"><a href="#1-1-MinIO-docker搭建" class="headerlink" title="1.1 MinIO docker搭建"></a>1.1 MinIO docker搭建</h3><h4 id="1-1-1-搭建服务端"><a href="#1-1-1-搭建服务端" class="headerlink" title="1.1.1 搭建服务端"></a>1.1.1 搭建服务端</h4><p>参考MinIO<a target="_blank" rel="noopener" href="https://www.minio.org.cn/docs/cn/minio/container/index.html">MinIO对象存储 — MinIO Object Storage for Container</a>搭建</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p <span class="variable">$&#123;HOME&#125;</span>/minio/data</span><br><span class="line"></span><br><span class="line">docker run \</span><br><span class="line">   -p 9000:9000 \</span><br><span class="line">   -p 9090:9090 \</span><br><span class="line">   --user $(<span class="built_in">id</span> -u):$(<span class="built_in">id</span> -g) \</span><br><span class="line">   --name minio1 \</span><br><span class="line">   -e <span class="string">&quot;MINIO_ROOT_USER=ROOTUSER&quot;</span> \</span><br><span class="line">   -e <span class="string">&quot;MINIO_ROOT_PASSWORD=CHANGEME123&quot;</span> \</span><br><span class="line">   -v <span class="variable">$&#123;HOME&#125;</span>/minio/data:/data \</span><br><span class="line">   quay.io/minio/minio server /data --console-address <span class="string">&quot;:9090&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p <span class="variable">$&#123;HOME&#125;</span>/minio/data</span><br><span class="line">docker run \</span><br><span class="line">   -p 9000:9000 \</span><br><span class="line">   -p 9090:9090 \</span><br><span class="line">   --user $(<span class="built_in">id</span> -u):$(<span class="built_in">id</span> -g) \</span><br><span class="line">   --name minio1 \</span><br><span class="line">   -e <span class="string">&quot;MINIO_ROOT_USER=ROOTUSER&quot;</span> \</span><br><span class="line">   -e <span class="string">&quot;MINIO_ROOT_PASSWORD=CHANGEME123&quot;</span> \</span><br><span class="line">   -v <span class="variable">$&#123;HOME&#125;</span>/minio/data:/data \</span><br><span class="line">   quay.io/minio/minio server /data --console-address <span class="string">&quot;:9090&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>报错</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker: Got permission denied <span class="keyword">while</span> trying to connect to the Docker daemon socket at unix:<span class="regexp">//</span><span class="regexp">/var/</span>run<span class="regexp">/docker.sock: Post &quot;http:/</span><span class="regexp">/%2Fvar%2Frun%2Fdocker.sock/</span>v1.<span class="number">24</span><span class="regexp">/containers/</span>create?name=minio1<span class="string">&quot;: dial unix /var/run/docker.sock: connect: permission denied.</span></span><br></pre></td></tr></table></figure>
@@ -255,7 +261,7 @@
 <p>网上找了很多教程，比如修改daemo.json文件，因为是dsm系统，这个文件可能没有生效；修改dsm的注册表为阿里云的镜像加速源，也没有生效。</p>
 <p>最后在dsm的docker界面搜索的minio这个镜像直接下载后，运行的下面的docker命令。</p>
 <p><em><strong>我的docker只懂一点皮毛，有时间需要深入的学习一下</strong></em>。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -itd \</span><br><span class="line">	-p <span class="number">9000</span>:<span class="number">9000</span> \</span><br><span class="line">	-p <span class="number">9090</span>:<span class="number">9090</span> \</span><br><span class="line">	--name minio \</span><br><span class="line">	-v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/data:/</span>data \</span><br><span class="line">	-v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/config:/</span>root/.minio \</span><br><span class="line">	-e <span class="string">&quot;MINIO_ROOT_USER=vuhks&quot;</span> \</span><br><span class="line">	-e <span class="string">&quot;MINIO_ROOT_PASSWORD=zxcv7890&quot;</span> \</span><br><span class="line">	quay.io<span class="regexp">/minio/mi</span>nio server /data --console-address <span class="string">&quot;:9090&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -itd \</span><br><span class="line">	-p <span class="number">9000</span>:<span class="number">9000</span> \</span><br><span class="line">	-p <span class="number">9090</span>:<span class="number">9090</span> \</span><br><span class="line">	--name minio \</span><br><span class="line">	-v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/data:/</span>data \</span><br><span class="line">	-v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/config:/</span>root/.minio \</span><br><span class="line">	-e <span class="string">&quot;MINIO_ROOT_USER=*****&quot;</span> \</span><br><span class="line">	-e <span class="string">&quot;MINIO_ROOT_PASSWORD=*****&quot;</span> \</span><br><span class="line">	quay.io<span class="regexp">/minio/mi</span>nio server /data --console-address <span class="string">&quot;:9090&quot;</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -271,7 +277,7 @@
 <li>修改Access Rule</li>
 </ul>
 <p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230609224152132.png" alt="image-20230609224152132"></p>
-<h3 id="1-2-Nginx-docker搭建"><a href="#1-2-Nginx-docker搭建" class="headerlink" title="1.2 Nginx docker搭建"></a>1.2 Nginx docker搭建</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd  \</span><br><span class="line">	--name image  \</span><br><span class="line">	-p <span class="number">8081</span>:<span class="number">80</span>  \</span><br><span class="line">	-v ~<span class="regexp">/docker/im</span>age<span class="regexp">/conf:/</span>etc<span class="regexp">/nginx/</span>conf.d \</span><br><span class="line">	-v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/data:/</span>data nginx</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="1-2-Nginx-docker搭建"><a href="#1-2-Nginx-docker搭建" class="headerlink" title="1.2 Nginx docker搭建"></a>1.2 Nginx docker搭建</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd  \</span><br><span class="line">	--name image  \</span><br><span class="line">	-p <span class="number">8081</span>:<span class="number">80</span>  \</span><br><span class="line">	-p <span class="number">8083</span>:<span class="number">443</span> \</span><br><span class="line">	-v ~<span class="regexp">/docker/im</span>age<span class="regexp">/conf:/</span>etc<span class="regexp">/nginx/</span>conf.d \</span><br><span class="line">    -v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/data:/</span>data nginx</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>在conf文件夹下创建一个minio.conf（命名无所谓 ），添加以下配置</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       <span class="number">80</span>;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    charset koi8-r;</span><br><span class="line">    access_log  <span class="regexp">/var/</span>log<span class="regexp">/nginx/</span>host.access.log  main;</span><br><span class="line">    location ^~ <span class="regexp">/blog/</span> &#123;</span><br><span class="line">        root   <span class="regexp">/data/</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -325,10 +331,77 @@
 
 <p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230610103641628.png" alt="image-20230610103641628"></p>
 <p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230610104323821.png" alt="image-20230610104323821"></p>
-<p>2.3 内网穿透</p>
-<p>现在暂时用的是ddns加内网穿透的方案，因为用的是openwrt做的端口转发，可能会不稳定，先暂时这样用吧</p>
+<h3 id="2-3-内网穿透"><a href="#2-3-内网穿透" class="headerlink" title="2.3 内网穿透"></a>2.3 内网穿透</h3><p>现在暂时用的是ddns加内网穿透的方案，因为用的是openwrt做的端口转发，可能会不稳定，先暂时这样用吧</p>
 <p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616164939096.png" alt="image-20230616164939096"></p>
 <p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616164905957.png" alt="image-20230616164905957"></p>
+<h2 id="3-一些问题"><a href="#3-一些问题" class="headerlink" title="3.一些问题"></a>3.一些问题</h2><h3 id="3-1-net-ERR-SSL-PORTOCOL-ERROR"><a href="#3-1-net-ERR-SSL-PORTOCOL-ERROR" class="headerlink" title="3.1 net::ERR_SSL_PORTOCOL_ERROR"></a>3.1 net::ERR_SSL_PORTOCOL_ERROR</h3><p><img data-src="http://home.vuhks.top:9000/blog/2023/06/16/image-20230616170105987.png" alt="image-20230616170105987"></p>
+<p>原因：图片的url地址是http的头，但是博客的地址是https的头，需要一致。</p>
+<p>解决：修改nginx代理即可，添加https证书。</p>
+<h4 id="3-1-1-申请SSL免费证书"><a href="#3-1-1-申请SSL免费证书" class="headerlink" title="3.1.1 申请SSL免费证书"></a>3.1.1 申请SSL免费证书</h4><p>途径：</p>
+<p>1.Let’s Encrypt  比较复杂吧，可google</p>
+<p>2.阿里云免费ssl <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/174755007">33种免费获取SSL证书的方式 - 知乎 (zhihu.com)</a></p>
+<p>因为自己在阿里云购买的域名，所以直接使用阿里云免费ssl</p>
+<p>步骤</p>
+<ol>
+<li><p>登陆阿里云控制台，搜索ssl证书</p>
+</li>
+<li><p>点击免费证书，购买，再点击证书，即可活动一年免费证书</p>
+<p><img data-src="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622111805360.png" alt="image-20230622111805360"></p>
+</li>
+<li><p>证书验证</p>
+</li>
+</ol>
+<p>阿里云控制台会自动给你添加记录，等待几分钟验证通过就行，状态为已签发。这里没有截图</p>
+<ol start="4">
+<li>证书下载</li>
+</ol>
+<p><img data-src="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622112030790.png" alt="image-20230622112030790"></p>
+<h3 id="3-1-2-docker-配置证书"><a href="#3-1-2-docker-配置证书" class="headerlink" title="3.1.2 docker 配置证书"></a>3.1.2 docker 配置证书</h3><p>1.上传上一步下载的证书</p>
+<p>2.修改nginx配置文件</p>
+<p>这里完全去掉了80的代理，也不再用代理访问了，直接用https访问。</p>
+<pre><code>   server &#123;
+                listen 443 ssl;
+                server_name home.vuhks.top;
+                ssl_certificate /etc/nginx/certs/1_home.vuhks.top.pem;
+                ssl_certificate_key /etc/nginx/certs/1_home.vuhks.top.key;
+                ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
+                   ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+                ssl_prefer_server_ciphers on;
+                client_max_body_size 50m;
+                location ^~/blog &#123;
+                    proxy_pass http://192.168.6.202:9000;
+                    proxy_set_header  Host  $host;
+                    proxy_set_header  X-Real-IP  $remote_addr;
+                    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+                    &#125;
+            &#125;
+   
+</code></pre>
+<p>3.修改docker的启动命令，把证书的路径加上去</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd  \</span><br><span class="line">	--name image  \</span><br><span class="line">	-p <span class="number">8081</span>:<span class="number">80</span>  \</span><br><span class="line">	-p <span class="number">8083</span>:<span class="number">443</span> \</span><br><span class="line">	-v ~<span class="regexp">/docker/im</span>age<span class="regexp">/conf:/</span>etc<span class="regexp">/nginx/</span>conf.d \</span><br><span class="line">	-v ~<span class="regexp">/docker/im</span>age<span class="regexp">/certs:/</span>etc<span class="regexp">/nginx/</span>certs \</span><br><span class="line">    -v ~<span class="regexp">/docker/mi</span>nio<span class="regexp">/data:/</span>data nginx</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<p><img data-src="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622153525132.png" alt="image-20230622153525132"></p>
+<p>这是因为命令输错了，docker run中的可执行指令有错误。</p>
+<p><img data-src="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622150949142.png" alt="image-20230622150949142"></p>
+<p>这是因为编译安装的时候没有启动没有添加ssl模块</p>
+<p>好像不是因为这个，我把错误的配置好删掉了。</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> *<span class="number">62</span> no live upstreams while connecting to upstream, client: <span class="number">172</span>.<span class="number">17</span>.<span class="number">0</span>.<span class="number">1</span>, server: home.vuhks.top, request: <span class="string">&quot;<span class="keyword">GET</span> /favicon.ico HTTP/1.1&quot;</span>, upstream: <span class="string">&quot;http://localhost/favicon.ico&quot;</span>, host: <span class="string">&quot;home.vuhks.top:8083&quot;</span>, referrer: <span class="string">&quot;https://home.vuhks.top:8083/blog/1234.jpg&quot;</span></span><br><span class="line"><span class="number">172.17.0.1</span> - - <span class="string">[22/Jun/2023:08:35:14 +0000]</span> <span class="string">&quot;<span class="keyword">GET</span> /favicon.ico HTTP/1.1&quot;</span> <span class="number">502</span> <span class="number">559</span> <span class="string">&quot;https://home.vuhks.top:8083/blog/1234.jpg&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51&quot;</span> <span class="string">&quot;-&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img data-src="http://home.vuhks.top:9000/blog/2023/06/22/image-20230622163602145.png" alt="image-20230622163602145"></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> /xxx/ &#123;</span><br><span class="line"> <span class="attribute">proxy_pass</span> http://localhost:9000/;</span><br><span class="line">			<span class="comment"># 下面这三个记得加上</span></span><br><span class="line"> <span class="attribute">proxy_set_header</span>  Host       <span class="variable">$host</span>;</span><br><span class="line"><span class="attribute">proxy_set_header</span>  X-Real-IP    <span class="variable">$remote_addr</span>;</span><br><span class="line"><span class="attribute">proxy_set_header</span>  X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">		&#125;  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这样改写之后仍然不行，继续google，最后发现日志里的upstrem里“<a target="_blank" rel="noopener" href="http://127.0.0.1:9000/blog/1234.jpg%E2%80%9D%E8%BF%99%E9%87%8C%E6%9C%89%E9%97%AE%E9%A2%98%EF%BC%8C%E5%9B%A0%E4%B8%BA%E6%88%91%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE192.168.6.202:9000/blog/1234/jpg%E6%98%AF%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E7%9A%84%E3%80%82%E6%89%80%E4%BB%A5%E7%8C%9C%E9%94%99%E6%98%AFdocker%E7%9A%84%E5%8E%9F%E5%9B%A0%EF%BC%8C%E4%B8%8D%E8%83%BD%E8%BF%99%E4%B9%88%E5%86%99%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F">http://127.0.0.1:9000/blog/1234.jpg”这里有问题，因为我直接访问192.168.6.202:9000/blog/1234/jpg是可以访问的。所以猜错是docker的原因，不能这么写配置文件？</a></p>
+<p>所以我直接将其改为192.168.6.202:9000，下面贴出最后的配置文件</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -415,7 +488,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%BB%BA%E7%A7%81%E6%9C%89%E5%9B%BE%E5%BA%8A"><span class="nav-text">自建私有图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A"><span class="nav-text">1.搭建图床</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-MinIO-docker%E6%90%AD%E5%BB%BA"><span class="nav-text">1.1 MinIO docker搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1-%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">1.1.1 搭建服务端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Nginx-docker%E6%90%AD%E5%BB%BA"><span class="nav-text">1.2 Nginx docker搭建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%90%AD%E9%85%8DTypora"><span class="nav-text">2. 搭配Typora</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E4%BD%BF%E7%94%A8picgo-core"><span class="nav-text">2.1 使用picgo-core</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-%E5%AE%89%E8%A3%85"><span class="nav-text">2.1.1 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-%E9%85%8D%E7%BD%AE"><span class="nav-text">2.1.2 配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-typora-%E4%BD%BF%E7%94%A8"><span class="nav-text">2.2 typora 使用</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%BB%BA%E7%A7%81%E6%9C%89%E5%9B%BE%E5%BA%8A"><span class="nav-text">自建私有图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A"><span class="nav-text">1.搭建图床</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-MinIO-docker%E6%90%AD%E5%BB%BA"><span class="nav-text">1.1 MinIO docker搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1-%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">1.1.1 搭建服务端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Nginx-docker%E6%90%AD%E5%BB%BA"><span class="nav-text">1.2 Nginx docker搭建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%90%AD%E9%85%8DTypora"><span class="nav-text">2. 搭配Typora</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E4%BD%BF%E7%94%A8picgo-core"><span class="nav-text">2.1 使用picgo-core</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-%E5%AE%89%E8%A3%85"><span class="nav-text">2.1.1 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-%E9%85%8D%E7%BD%AE"><span class="nav-text">2.1.2 配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-typora-%E4%BD%BF%E7%94%A8"><span class="nav-text">2.2 typora 使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F"><span class="nav-text">2.3 内网穿透</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="nav-text">3.一些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-net-ERR-SSL-PORTOCOL-ERROR"><span class="nav-text">3.1 net::ERR_SSL_PORTOCOL_ERROR</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-1-%E7%94%B3%E8%AF%B7SSL%E5%85%8D%E8%B4%B9%E8%AF%81%E4%B9%A6"><span class="nav-text">3.1.1 申请SSL免费证书</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-docker-%E9%85%8D%E7%BD%AE%E8%AF%81%E4%B9%A6"><span class="nav-text">3.1.2 docker 配置证书</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
